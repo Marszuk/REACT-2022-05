@@ -1,3 +1,5 @@
+import Input from "../../components/Input";
+
 const initialState =  {
   todos : [
     {
@@ -16,9 +18,9 @@ const initialState =  {
     upvotes: 0,
     downvotes: 0} ]
 };
-  export const MemReducer = (state = initialState, action) => {
+  export const MemReducer = (state = initialState, action, props) => {
     
-
+    
     switch (action.type) {
       case "COMPLETE_TODO": {
         const index = state.todos.findIndex(todo => todo.name === action.name); 
@@ -33,6 +35,21 @@ const initialState =  {
         const index = state.todos.findIndex(todo => todo.name === action.name); 
         const newArray = [...state.todos]; 
         newArray[index].downvotes = state.todos[index].downvotes + 1
+        return { 
+         ...state, //copying the orignal state
+         todos: newArray, //reassingning todos to new array
+        }
+       }
+       
+       case "COMPLETE_TODO3": {
+    
+        const newArray = [...state.todos, {
+          name: action.title,
+          path: action.path,
+          upvotes: 0,
+          downvotes: 0}]; 
+        
+      
         return { 
          ...state, //copying the orignal state
          todos: newArray, //reassingning todos to new array

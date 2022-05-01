@@ -14,6 +14,11 @@ const Navigation = () => {
                 <h1>Hot</h1>
                 </NavLink>
           </li>
+          <li>
+            <NavLink to="/input">
+                <h1>Input</h1>
+                </NavLink>
+          </li>
         </ul>
       </div>
     );

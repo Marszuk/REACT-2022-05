@@ -26,15 +26,16 @@ const Input = (props) => {
     
 
     return (
-        
-        <div >
+        <div>
+        <div className="create" >
           
-            <button className="buttoncreate" onClick={addMem}>Create Mem</button>
+             Write Mem Title
             <input className="input1" onChange={event => setTitle(event.target.value)} ></input>
-           
-            <label>
-        
-          <select className="select" onChange={event => setPath(event.target.value)}>
+            
+            <label className="label">
+             Choose a topic
+          <select className="select" onChange={event => setPath(event.target.value)}> 
+            <option >Option</option> 
             <option value={path1}>Sea</option>
             <option value={path2}>Buddy</option>
             <option value={path3}>Potatoes</option>
@@ -42,9 +43,9 @@ const Input = (props) => {
             <option value={path5}>Friend</option>
           </select>
         </label>
-            
+        <button className="buttoncreate" onClick={addMem}>Create Mem</button>   
         </div>   
-
+        </div>
      )
     
      

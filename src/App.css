@@ -17,9 +17,10 @@ padding: 30px 30px;
 
 .navbar {
   width: 300px;
-  height: 800px;
+  height: auto;
   background-color: #0a060f;
   float:left;
+  display: block;
 }
 .active {
   background-color: #6567e4;
@@ -38,3 +39,49 @@ padding: 30px 30px;
   max-width: 40%;
   height: auto;
 }
+
+
+.input1 {
+  display: block;
+  width: 30%;
+  float:left;
+  padding: 20px 20px 20px 200px
+}
+.select {
+  display: block;
+  width: 90%;
+  float:left;
+  padding: 20px 20px 20px 200px
+}
+.label {
+  display: block;
+  width: 90%;
+  float:left;
+  padding: 20px 20px 20px 0px
+}
+.input3 {
+  display: block;
+  width: 30%;
+  float:left;
+  padding: 20px 20px 20px 200px
+}
+.input4 {
+  display: block;
+  width: 30%;
+  float:left;
+  padding: 20px 20px 20px 200px
+}
+.buttoncreate {
+  display: block;
+  width: 70%;
+  float:left;
+  padding: 20px 20px 20px 200px
+}
+.create {
+  display: block;
+  width: 30%;
+  float:left;
+  padding: 20px 20px 20px 200px
+}
+
+

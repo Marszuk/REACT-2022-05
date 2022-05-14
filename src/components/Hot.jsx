@@ -10,7 +10,7 @@ import { selectMem } from "../store/reducers/globalReducer"
 const Hot = () => {
     const todos = useSelector(selectMem)
     return (
-        <div> 
+        <div class="content"> 
         {
         (todos.map(item => 
         (<div>

@@ -10,9 +10,9 @@ import { selectMem } from "../store/reducers/globalReducer"
 const Regular = () => {
     const todos = useSelector(selectMem)
     return (
-            <div> 
+            <div class="content"> 
               {
-        todos.map(item => (<div><Mem path={item.path} upvotes={item.upvotes} downvotes={item.downvotes} name={item.name}/></div>))
+        todos.map(item => (<Mem path={item.path} upvotes={item.upvotes} downvotes={item.downvotes} name={item.name}/>))
       }
             </div>
         

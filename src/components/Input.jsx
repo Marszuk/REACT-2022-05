@@ -4,7 +4,7 @@ import { MemReducer } from "../store/reducers/globalReducer";
 import { useState } from 'react';
 
 
-const Input = (props) => {
+const Input = () => {
     const dispatch = useDispatch();
     
     const addMem = ()=> 
@@ -26,7 +26,7 @@ const Input = (props) => {
     
 
     return (
-        <div>
+        <div class="content">
         <div className="create" >
           
              Write Mem Title

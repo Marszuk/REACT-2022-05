@@ -1,5 +1,11 @@
 .App{
   background-color: #0b0a3598;
+  height: 100%;
+}
+.content{
+  position:relative;
+  width: 400px;
+  margin-left:380px;
 }
 
 .navbar ul {
@@ -8,7 +14,7 @@
   
 }
 
-.navbar li a{
+.navbar li a{   
 color: rgb(222, 233, 238);
 text-decoration: none;
 display: block;
@@ -16,11 +22,13 @@ padding: 30px 30px;
 }
 
 .navbar {
+  height: 100%;
+  background-color: #0a060f;  
+  position:fixed;
+  z-index: 1;
   width: 300px;
-  height: auto;
-  background-color: #0a060f;
-  float:left;
-  display: block;
+  top:0px;
+  left: 0px;
 }
 .active {
   background-color: #6567e4;
@@ -30,28 +38,27 @@ padding: 30px 30px;
 }
 .memFrame {
   display: block;
-  width: 30%;
   float:left;
-  padding: 20px 20px 20px 200px
+  padding: 20px 20px 20px 20px
 }
 
 .img {
-  max-width: 40%;
+  max-width: 300px;
   height: auto;
 }
 
 
 .input1 {
   display: block;
-  width: 30%;
+  width: 160px;
   float:left;
-  padding: 20px 20px 20px 200px
+  padding: 20px 20px 20px 20px
 }
 .select {
   display: block;
-  width: 90%;
+  width: 200px;
   float:left;
-  padding: 20px 20px 20px 200px
+  padding: 20px 20px 20px 20px
 }
 .label {
   display: block;
@@ -61,27 +68,27 @@ padding: 30px 30px;
 }
 .input3 {
   display: block;
-  width: 30%;
+  width: 100%;
   float:left;
-  padding: 20px 20px 20px 200px
+  padding: 20px 20px 20px 20px
 }
 .input4 {
   display: block;
-  width: 30%;
+  width: 50%;
   float:left;
-  padding: 20px 20px 20px 200px
+  padding: 20px 20px 20px 20px
 }
 .buttoncreate {
   display: block;
-  width: 70%;
+  width: 200px;
   float:left;
-  padding: 20px 20px 20px 200px
+  padding: 20px 20px 20px 20px
 }
 .create {
   display: block;
   width: 30%;
   float:left;
-  padding: 20px 20px 20px 200px
+  padding: 20px 20px 20px 20px
 }
 
 

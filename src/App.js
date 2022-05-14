@@ -8,23 +8,20 @@ import Navigation from './components/Navigation';
 import Mem from './components/Mem'
 import { useSelector } from 'react-redux';
 import { selectMem } from './store/reducers/globalReducer';
-
+import Input from './components/Input';
 
 function App() {
  
   return( <div className="App">
     <BrowserRouter>
-    <div className="pageBody"><Navigation/>
-   
-    </div>
-    
+    <Navigation/>
     <Routes>
       <Route path="/" element={<Regular/>}></Route>
       <Route path="/Hot" element={<Hot/>}></Route>
+      <Route path="/input" element={<Input/>}></Route>
       <Route path="*" element={<Page404/>}></Route>
     </Routes>
     </BrowserRouter>
-    
     </div>
   );
 }

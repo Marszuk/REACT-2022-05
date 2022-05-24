@@ -3,7 +3,6 @@ import { useDispatch } from "react-redux"
 
 const Mem = ({name, path, upvotes, downvotes}) => {
     const dispatch = useDispatch();
-    
     const upvote = ()=> 
     {
         const action = {type:"COMPLETE_TODO", name}
@@ -15,9 +14,9 @@ const Mem = ({name, path, upvotes, downvotes}) => {
         const action = {type:"COMPLETE_TODO2", name}
         dispatch(action)
     } 
-
+     
     return (
-        <div className="memFrame" key={name}>{name}<br/>
+        <div className="memFrame" >{name}<br/>
             <img className="img" src={path}/><br/>
             <button onClick={upvote}>+</button>
             <button>{upvotes}</button>
